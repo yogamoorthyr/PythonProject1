@@ -1,0 +1,8 @@
+savings = 100
+growth_multiplier = 1.1
+year1 = savings * growth_multiplier
+print (year1)
+
+
+savings = 100
+print (savings)
