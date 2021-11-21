@@ -41,4 +41,15 @@ for index, area in enumerate(areas) :
         # Computation performed here
         return x, y
 
+import numpy as np
 
+
+# Assign filename: file
+file = open(r'C:\Users\Dell\PycharmProjects\pythonProject\PythonProject1\seaslugs.dat.txt')
+
+# Import file: data
+data = np.loadtxt(file, delimiter='\t', dtype=str)
+
+# Print the first element of data
+print(data[0])
+print (data)
