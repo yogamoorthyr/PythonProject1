@@ -53,3 +53,9 @@ data = np.loadtxt(file, delimiter='\t', dtype=str)
 # Print the first element of data
 print(data[0])
 print (data)
+
+import pandas as pd
+
+from sas7bdat import SAS7BDAT
+with SAS7BDAT ('beer.sas7bdat') as file
+
