@@ -56,6 +56,26 @@ print (data)
 
 import pandas as pd
 
+import pandas as pd
+import pyarrow as pa
+import pyarrow.parquet as pq
 from sas7bdat import SAS7BDAT
-with SAS7BDAT ('beer.sas7bdat') as file
+import platform
+print('Python: ', platform.python_version())
+print('pandas: ', pd.__version__)
+print('pyarrow: ', pa.__version__)
 
+
+
+file = open(r'C:\Users\Dell\PycharmProjects\pythonProject\PythonProject1\beer.sas7bdat')
+
+from sas7bdat import SAS7BDAT
+with SAS7BDAT (r'C:\Users\Dell\PycharmProjects\pythonProject\PythonProject1\beer.sas7bdat') as file: df_sas = file.to_data_frame()
+print(df_sas.head())
+pd.DataFrame.hist(df_sas[['P']])
+plt.ylabel('count')
+plt.show()
+
+import pandas as pd
+adeff2 = pd.read_sas(r'C:\Users\Dell\PycharmProjects\pythonProject\PythonProject1\beer.sas7bdat')
+print(adeff2)
