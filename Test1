@@ -6,3 +6,5 @@ print (year1)
 
 savings = 100
 print (savings)
+
+print ('*' * 10)

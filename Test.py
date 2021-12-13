@@ -57,15 +57,15 @@ print (data)
 import pandas as pd
 
 import pandas as pd
-import pyarrow as pa
-import pyarrow.parquet as pq
-from sas7bdat import SAS7BDAT
+
+
 import platform
 print('Python: ', platform.python_version())
 print('pandas: ', pd.__version__)
-print('pyarrow: ', pa.__version__)
 
 
+
+import SAS7BDAT
 
 file = open(r'C:\Users\Dell\PycharmProjects\pythonProject\PythonProject1\beer.sas7bdat')
 
@@ -79,3 +79,7 @@ plt.show()
 import pandas as pd
 adeff2 = pd.read_sas(r'C:\Users\Dell\PycharmProjects\pythonProject\PythonProject1\beer.sas7bdat')
 print(adeff2)
+
+
+import scipy.io
+
